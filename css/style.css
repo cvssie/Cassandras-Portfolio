@@ -1,0 +1,58 @@
+.highlight {background-color: #7AB2D3;}
+
+
+:root {
+    /* Replace your primary color from your UI Kit */
+    --bs-primary: #7AB2D3;
+
+    /* Replace your secondary color from your UI Kit  */
+    --secondary-color: #DFF2EB;
+
+    /* Replace the main body font from your UI Kit */
+    --bs-font-afacad: sans-serif;
+}
+.navbar {
+    /* Make the navbar background transparent */
+    background-color: var(--secondary-color);
+
+     /* Stretch the navbar across the full width */
+     width: 100%;
+
+     /* Add inner spacing to the navbar */
+     padding: 1rem;
+}
+.hero {
+    background-color: var(--bs-primary);
+}
+.Projects {
+    background-color: var(--secondary-color);
+}
+.photos {
+    background-color: var(--secondary-color);
+}
+footer {
+
+    /* Change footer background color */
+    background-color: var(--secondary-color); }
+
+    .btn-primary {
+        /* Change primary button background color to primary color */
+        background-color: var(--secondary-color);
+        
+    }
+    .btn-primary:hover {
+        /* Optional: Change primary button hover state background and text color  */
+        background-color: var(--bs-primary);
+        color: var(--bs-dark);
+    }
+h1 {font-size: 2.5rem;} 
+h2 {font-size: 2rem;}
+h3 {font-size: 1.75rem;}
+h4 {font-size: 1.5rem;}
+h5 {font-size: 1.25rem;}
+
+    /* Optional: Customize responsive style for display-1 on small devices and larger */
+    .display-1 {
+        font-size: 4rem;
+    }
+    
