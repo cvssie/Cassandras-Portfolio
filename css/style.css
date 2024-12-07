@@ -1,4 +1,10 @@
-.highlight {background-color: #7AB2D3;}
+/********************************
+Bootstrap Variables Override
+**********************************/
+
+.highlight {
+    background-color: #7AB2D3;
+}
 
 
 :root {
@@ -9,50 +15,94 @@
     --secondary-color: #DFF2EB;
 
     /* Replace the main body font from your UI Kit */
-    --bs-font-afacad: sans-serif;
+    /* Note: @Cassandra I switched 'afacad' and 'sans-serif' so the font showed properly*/
+    --bs-font-sans-serif: 'afacad';
 }
+
+/********************************
+Global Styles and UI Components
+**********************************/
+
 .navbar {
     /* Make the navbar background transparent */
     background-color: var(--secondary-color);
 
-     /* Stretch the navbar across the full width */
-     width: 100%;
+    /* Stretch the navbar across the full width */
+    width: 100%;
 
-     /* Add inner spacing to the navbar */
-     padding: 1rem;
+    /* Add inner spacing to the navbar */
+    padding: 1rem;
 }
+
 .hero {
     background-color: var(--bs-primary);
 }
+
 .Projects {
     background-color: var(--secondary-color);
 }
+
 .photos {
     background-color: var(--secondary-color);
 }
+
 footer {
 
     /* Change footer background color */
-    background-color: var(--secondary-color); }
+    background-color: var(--secondary-color);
+}
 
-    .btn-primary {
-        /* Change primary button background color to primary color */
-        background-color: var(--secondary-color);
-        
-    }
-    .btn-primary:hover {
-        /* Optional: Change primary button hover state background and text color  */
-        background-color: var(--bs-primary);
-        color: var(--bs-dark);
-    }
-h1 {font-size: 2.5rem;} 
-h2 {font-size: 2rem;}
-h3 {font-size: 1.75rem;}
-h4 {font-size: 1.5rem;}
-h5 {font-size: 1.25rem;}
+.btn-primary {
+    /* Change primary button background color to primary color */
+    background-color: var(--secondary-color);
 
-    /* Optional: Customize responsive style for display-1 on small devices and larger */
-    .display-1 {
-        font-size: 4rem;
-    }
-    
+    /* Note: @Cassandra You can add change the color of your button color here by replacing the hex code
+    Additionally, you can find more CSS properties here https://www.w3schools.com/css/css3_buttons.asp */
+    color: #ffffff;
+
+}
+
+.btn-primary:hover {
+    /* Optional: Change primary button hover state background and text color  */
+    background-color: var(--secondary-color);
+    color: var(--bs-dark);
+}
+
+/********************************
+Typography
+**********************************/
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+/* Optional: Customize responsive style for display-1 on small devices and larger */
+.display-1 {
+    font-size: 4rem;
+}
+
+/********************************
+Page-Specific
+**********************************/
+.project-card {
+    /* Note: @Cassandra This is where you can style the project card
+    Ex: I removed the background color; try removing the border with the 'border' property */
+    background-color: transparent;
+    border: unset
+}
